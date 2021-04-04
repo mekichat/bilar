@@ -10,13 +10,14 @@ public class Car {
         id =  num++;
     }
 
-    public Car(String namn,String model,String color, int year) {
+    public Car(String namn,String model,String color, int year, int nrOfWheels) {
         super();
         id =  num++;
         this.namn = namn;
         this.model = model;
         this.color = color;
-        this.year = year;        
+        this.year = year;
+        this.nrOfWheels = nrOfWheels;        
     }
 
 
@@ -33,8 +34,18 @@ public class Car {
     private String model;
     private String color;
     private int year;
+    private int nrOfWheels;
   
     
+    public void setNrofwheels(int n)
+    {
+        nrOfWheels  = n;
+    }
+    public int getNrofwheels()
+    {
+        return nrOfWheels;
+    }
+
     public void setNamn(String s)
     {
         namn  = s;
